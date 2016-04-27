@@ -44,6 +44,7 @@ export default class Layout extends Component {
     const rows = layouts.xs.grid.map(row =>
       row.map(tile =>
         ({
+          id: tile.id,
           width: tile.width,
           content: tiles[tile.id].content,
         })

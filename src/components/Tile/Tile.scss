@@ -1,0 +1,17 @@
+@import "../../theme/variables.scss";
+
+.tile {
+  border: solid 2px transparent;
+  padding: 0;
+  &:hover {
+    border: dashed 2px $current-tile-border-color;
+  }
+}
+
+.content {
+  z-index: 100;
+}
+
+.selected {
+  border: solid 2px $current-tile-border-color;
+}

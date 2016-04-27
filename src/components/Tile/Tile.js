@@ -5,6 +5,8 @@
 
 import React, { PropTypes } from 'react';
 
+import styles from './Tile.scss';
+
 /**
  * Tile component class.
  * @function Tile
@@ -14,8 +16,10 @@ import React, { PropTypes } from 'react';
  * @returns {string} Markup of the tile.
  */
 const Tile = ({ content, width }) =>
-  <div className={`tile col-xs-${width}`}>
-    {content}
+  <div className={`${styles.tile} col-xs-${width}`}>
+    <div className={styles.content}>
+      {content}
+    </div>
   </div>;
 
 /**

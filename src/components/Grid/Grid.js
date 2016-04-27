@@ -19,7 +19,7 @@ const Grid = ({ rows }) =>
     {rows.map((row, index) =>
       <Row
         key={index}
-        {...row}
+        tiles={row}
       />
     )}
   </div>;

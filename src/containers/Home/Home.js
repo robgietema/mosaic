@@ -8,6 +8,7 @@ import Helmet from 'react-helmet';
 
 import config from 'config';
 import styles from './Home.scss';
+import { Layout } from 'containers';
 
 /**
  * Home component.
@@ -20,6 +21,7 @@ const Home = () =>
     <div className="container">
       <h1>{config.app.title}</h1>
       <h2>{config.app.description}</h2>
+      <Layout />
     </div>
   </div>;
 

@@ -5,6 +5,15 @@
 
 import { ADD_LAYOUT, DELETE_LAYOUT, UPDATE_LAYOUT } from 'constants/ActionTypes';
 
+const initialState = {
+  xs: {
+    grid: [
+      [{ width: 4, id: 1 }, { width: 8, id: 2 }],
+      [{ width: 12, id: 3 }],
+    ],
+  },
+};
+
 /**
  * Layouts reducer.
  * @function layouts
@@ -12,7 +21,7 @@ import { ADD_LAYOUT, DELETE_LAYOUT, UPDATE_LAYOUT } from 'constants/ActionTypes'
  * @param {Object} action Action to be handled.
  * @returns {Object} New state.
  */
-export default function consent(state = [], action = {}) {
+export default function consent(state = initialState, action = {}) {
   switch (action.type) {
     case ADD_LAYOUT:
     case DELETE_LAYOUT:

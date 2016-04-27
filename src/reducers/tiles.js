@@ -6,13 +6,13 @@
 import { ADD_TILE, DELETE_TILE, UPDATE_TILE } from 'constants/ActionTypes';
 
 const initialState = {
-  1: {
+  '1ffc79e7-5031-4d28-8fc0-f0ddf85d58d8': {
     content: 'Tile 1',
   },
-  2: {
+  '2ffc79e7-5031-4d28-8fc0-f0ddf85d58d8': {
     content: 'Tile 2',
   },
-  3: {
+  '3ffc79e7-5031-4d28-8fc0-f0ddf85d58d8': {
     content: 'Tile 3',
   },
 };

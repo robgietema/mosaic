@@ -8,8 +8,11 @@ import { ADD_LAYOUT, DELETE_LAYOUT, UPDATE_LAYOUT } from 'constants/ActionTypes'
 const initialState = {
   xs: {
     grid: [
-      [{ width: 4, id: 1 }, { width: 8, id: 2 }],
-      [{ width: 12, id: 3 }],
+      [
+        { width: 4, id: '1ffc79e7-5031-4d28-8fc0-f0ddf85d58d8' },
+        { width: 8, id: '2ffc79e7-5031-4d28-8fc0-f0ddf85d58d8' },
+      ],
+      [{ width: 12, id: '3ffc79e7-5031-4d28-8fc0-f0ddf85d58d8' }],
     ],
   },
 };

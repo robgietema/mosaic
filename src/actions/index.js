@@ -7,6 +7,7 @@ import {
   ADD_TILE,
   DELETE_TILE,
   UPDATE_TILE,
+  SELECT_TILE,
   ADD_LAYOUT,
   DELETE_LAYOUT,
   UPDATE_LAYOUT,
@@ -42,6 +43,19 @@ export function deleteTile() {
 export function updateTile() {
   return {
     type: UPDATE_TILE,
+  };
+}
+
+/**
+ * Select tile action.
+ * @function updateTile
+ * @param {string} id Id of the tile.
+ * @returns {Object} Update tile action.
+ */
+export function selectTile(id) {
+  return {
+    type: UPDATE_TILE,
+    id,
   };
 }
 

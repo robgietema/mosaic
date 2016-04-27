@@ -10,6 +10,7 @@ import { reducer as form } from 'redux-form';
 
 import tiles from 'reducers/tiles';
 import layouts from 'reducers/layouts';
+import selected from 'reducers/selected';
 
 /**
  * Root reducer.
@@ -24,4 +25,5 @@ export default combineReducers({
   form,
   tiles,
   layouts,
+  selected,
 });

@@ -14,6 +14,7 @@ import { Grid } from 'components';
   state => ({
     tiles: state.tiles,
     layouts: state.layouts,
+    selected: state.selected,
   }),
 )
 /**
@@ -31,6 +32,7 @@ export default class Layout extends Component {
   static propTypes = {
     tiles: PropTypes.object.isRequired,
     layouts: PropTypes.object.isRequired,
+    selected: PropTypes.string.isRequired,
   };
 
   /**
@@ -47,6 +49,7 @@ export default class Layout extends Component {
           id: tile.id,
           width: tile.width,
           content: tiles[tile.id].content,
+          selected: tile.id === this.props.selected,
         })
       )
     );

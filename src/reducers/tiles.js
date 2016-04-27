@@ -24,7 +24,7 @@ const initialState = {
  * @param {Object} action Action to be handled.
  * @returns {Object} New state.
  */
-export default function consent(state = initialState, action = {}) {
+export default function tiles(state = initialState, action = {}) {
   switch (action.type) {
     case ADD_TILE:
     case DELETE_TILE:

@@ -8,13 +8,13 @@ import React, { PropTypes } from 'react';
 import styles from './Field.scss';
 
 /**
- * Register form component class.
+ * Field component class.
  * @function Field
  * @param {Object} props Component properties.
  * @param {Object} props.field Field data.
  * @param {string} props.label Lavel of the field.
  * @param {string} props.type Type of the field.
- * @returns {string} Markup of the not found page.
+ * @returns {string} Markup of the field.
  */
 const Field = ({ field, label, type }) =>
   <div className={`form-group ${field.error && field.touched ? ' has-error' : ''}`}>

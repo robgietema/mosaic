@@ -16,6 +16,6 @@ describe('Tile component', () => {
     const tile = ReactDOM.findDOMNode(renderer);
 
     expect(tile.textContent).to.equal('Content');
-    expect(tile.className).to.equal('tile col-xs-4');
+    expect(tile.className).to.contain('col-xs-4');
   });
 });

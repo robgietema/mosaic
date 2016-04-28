@@ -12,13 +12,15 @@ import { Row } from 'components';
  * @function Grid
  * @param {Object} props Component properties.
  * @param {Object[]} props.rows Rows in the grid.
+ * @param {func} props.selectTile Select tile method.
  * @returns {string} Markup of the row.
  */
-const Grid = ({ rows }) =>
+const Grid = ({ rows, selectTile }) =>
   <div className="grid">
     {rows.map((row, index) =>
       <Row
         key={index}
+        selectTile={selectTile}
         tiles={row}
       />
     )}
@@ -31,6 +33,7 @@ const Grid = ({ rows }) =>
  */
 Grid.propTypes = {
   rows: PropTypes.arrayOf(PropTypes.array),
+  selectTile: PropTypes.func.isRequired,
 };
 
 export default Grid;

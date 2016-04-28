@@ -15,6 +15,6 @@ describe('Row component', () => {
     );
     const row = ReactDOM.findDOMNode(renderer);
 
-    expect(row.className).to.equal('row');
+    expect(row.className).to.contain('row');
   });
 });

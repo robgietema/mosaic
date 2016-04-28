@@ -7,7 +7,9 @@
 
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 
+import { selectTile } from 'actions';
 import { Grid } from 'components';
 
 @connect(
@@ -16,6 +18,7 @@ import { Grid } from 'components';
     layouts: state.layouts,
     selected: state.selected,
   }),
+  dispatch => bindActionCreators({ selectTile }, dispatch),
 )
 /**
  * Layout component class.
@@ -33,6 +36,7 @@ export default class Layout extends Component {
     tiles: PropTypes.object.isRequired,
     layouts: PropTypes.object.isRequired,
     selected: PropTypes.string.isRequired,
+    selectTile: PropTypes.func.isRequired,
   };
 
   /**
@@ -54,7 +58,7 @@ export default class Layout extends Component {
       )
     );
 
-    return <Grid rows={rows} />;
+    return <Grid rows={rows} selectTile={this.props.selectTile} />;
   }
 }
 

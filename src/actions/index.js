@@ -49,13 +49,13 @@ export function updateTile() {
 /**
  * Select tile action.
  * @function updateTile
- * @param {string} id Id of the tile.
+ * @param {string} tile Id of the tile.
  * @returns {Object} Update tile action.
  */
-export function selectTile(id) {
+export function selectTile(tile) {
   return {
-    type: UPDATE_TILE,
-    id,
+    type: SELECT_TILE,
+    tile,
   };
 }
 
